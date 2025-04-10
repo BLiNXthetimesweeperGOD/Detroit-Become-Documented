@@ -12,6 +12,6 @@ wem - wwise audio files (the header looks like WAV, but these aren't WAV files!)
 
 ### Extensionless formats with file signatures
 ```
-segs - contains ZLIB-compressed data, usually models/gameplay assets
+segs - contains segmented, ZLIB-compressed data in 64 kilobyte chunks, usually models/gameplay assets
 QZIP - used for many different things (voice clips, segs containers, data containers...), is uncompressed in most cases.
 ```
