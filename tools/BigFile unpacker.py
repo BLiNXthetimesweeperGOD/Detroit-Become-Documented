@@ -17,7 +17,7 @@ def readIDX(idxFile):
                 dataFile = f"{packageName}.d{PackageID:02}"
             with open(dataFile, "rb") as container:
                 container.seek(Offset)
-                file = container.read(Size+AltSize) #TO-DO: Figure out what AltSize actually is
+                file = container.read(Size) #TO-DO: Figure out what AltSize actually is
                 if file.startswith(b'QZIP'):
                     with open(outputDirectory+f"{types.get(Type)}/"+f"{PackageID:02}_{ID:08}.QZIP", "w+b") as outputFile:
                         outputFile.write(file)
