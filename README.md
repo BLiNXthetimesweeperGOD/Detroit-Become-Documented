@@ -15,3 +15,9 @@ wem - wwise audio files (the header looks like WAV, but these aren't WAV files!)
 segs - contains segmented, ZLIB-compressed data in 64 kilobyte chunks, usually models/gameplay assets
 QZIP - used for many different things (voice clips, segs containers, data containers...), is uncompressed in most cases.
 ```
+
+Why call them signatures instead of "magic bytes"?
+
+From my experience reading through source code recently, most devs *do not* call this sort of thing "magic bytes". The term "magic bytes" makes literally no sense in this context anyways.
+
+People instead tend to call them signatures, which actually makes a lot more sense than "magic bytes".
