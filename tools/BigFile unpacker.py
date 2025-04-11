@@ -18,8 +18,18 @@ def readIDX(idxFile):
             with open(dataFile, "rb") as container:
                 container.seek(Offset)
                 file = container.read(Size+AltSize) #TO-DO: Figure out what AltSize actually is
-                with open(outputDirectory+f"{types.get(Type)}/"+f"{PackageID:02}_{ID:08}.bin", "w+b") as outputFile:
-                    outputFile.write(file)
+                if file.startswith(b'QZIP'):
+                    with open(outputDirectory+f"{types.get(Type)}/"+f"{PackageID:02}_{ID:08}.QZIP", "w+b") as outputFile:
+                        outputFile.write(file)
+                elif file.startswith(b'segs'):
+                    with open(outputDirectory+f"{types.get(Type)}/"+f"{PackageID:02}_{ID:08}.segs", "w+b") as outputFile:
+                        outputFile.write(file)
+                elif file.startswith(b'COM_CONT'):
+                    with open(outputDirectory+f"{types.get(Type)}/"+f"{PackageID:02}_{ID:08}.COM_CONT", "w+b") as outputFile:
+                        outputFile.write(file)
+                else:
+                    with open(outputDirectory+f"{types.get(Type)}/"+f"{PackageID:02}_{ID:08}.bin", "w+b") as outputFile:
+                        outputFile.write(file)
         print(f"The packages were successfully unpacked.")
 
 #Define all major variables/reused stuff here
