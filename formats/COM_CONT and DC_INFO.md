@@ -1,5 +1,5 @@
 ## Please note that this is just the header! 
-#### Some COM_CONT/DC_INFO files contain more data after the header which would need to be parsed separately.
+#### Some COM_CONT/DC_INFO files contain more data after the header which would need to be parsed separately based on the asset type.
 
 # COM_CONT Format Specification
 
