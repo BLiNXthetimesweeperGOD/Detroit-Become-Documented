@@ -46,7 +46,7 @@ def decompressSeg(file):
 
                 #Go back to the saved position
                 f.seek(savedPosition)
-        return fullData
+            return fullData
 
 for file in files:
     #Decompress the seg
