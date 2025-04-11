@@ -1,4 +1,4 @@
-# Many packages contain a variable that is referred to as "type". This contains a list of every known type.
+### Many packages/containers/files that reference other files contain a variable that is referred to as "type". This contains a list of every known type.
 
 | Hex Value | Type Name |
 |-----------|-----------|
