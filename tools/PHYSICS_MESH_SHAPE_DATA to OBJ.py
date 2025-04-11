@@ -1,7 +1,7 @@
 #A custom library I wrote to cut down on the time needed to write scripts.
 #We mainly just use it for file handling, the byte string scanner and lunpack (Little Endian Unpack).
 from Libraries.codingTools import *
-path = "decompressed/converted/"
+path = "PHYSICS_MESH_SHAPE_DATA/outputOBJs/"
 createPath(path) #Checks if the path exists or not and creates it if needed
 scanBytes = b'PHYMSD__'
 files = dialogs.files()
