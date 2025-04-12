@@ -8,7 +8,7 @@ dat - stores data referenced by the idx file, referenced as package ID 0
 dXX - stores data referenced by the idx file, referenced as package IDs 1-29
 bnk - embedded within packages stored inside of the dat/dXX packages, contains wem files
 wem - wwise audio files (the header looks like WAV, but these aren't WAV files!)
-mid - MIDI files (only 4 seem to exist, they use the RAW_FILE identifier and are in QZIP containers)
+mid - MIDI files (used for the piano in "The Painter". Only 4 exist and they're stored in QZIP containers.)
 bk2 - Bink 2 Video files (some are encrypted and can't be ripped yet)
 ```
 
