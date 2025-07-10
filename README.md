@@ -25,4 +25,4 @@ From my experience reading through source code recently, most devs *do not* call
 
 People instead tend to call them signatures, which actually makes a lot more sense than "magic bytes" (or "magic number").
 
-Magic number makes a lot more sense when talking about reverse engineering though.
+Magic number makes a lot of sense when talking about reverse engineering though.
