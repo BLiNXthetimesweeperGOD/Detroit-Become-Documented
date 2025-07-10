@@ -19,8 +19,10 @@ segs - contains segmented, ZLIB-compressed data in 64 kilobyte chunks, usually m
 QZIP - used for many different things (voice clips, segs containers, data containers...), is uncompressed in most cases.
 ```
 
-Why call them signatures instead of "magic bytes"?
+Why call them signatures instead of "magic bytes" (or "magic number")?
 
 From my experience reading through source code recently, most devs *do not* call this sort of thing "magic bytes". The term "magic bytes" makes literally no sense in this context anyways.
 
-People instead tend to call them signatures, which actually makes a lot more sense than "magic bytes".
+People instead tend to call them signatures, which actually makes a lot more sense than "magic bytes" (or "magic number").
+
+Magic number makes a lot more sense when talking about reverse engineering though.
