@@ -1,6 +1,8 @@
 # Detroit-Become-Documented
 This repository is for documentation of the various file formats used in the PC version of Detroit: Become Human
 
+You may use this information as you wish.
+
 ### File format list (with extensions)
 ```
 idx - an index for the data contained within the dat/dXX files. Everything involving those files is generally handled here.
