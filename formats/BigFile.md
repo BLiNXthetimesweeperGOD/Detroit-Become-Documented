@@ -1,4 +1,4 @@
-# BigFile.idx/dat/dXX
+# BigFile.idx (references the .dat/dXX files)
 This is the main container format that you'll see when you first install the game. It has a relatively simple structure.
 
 ## Header Format
