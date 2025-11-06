@@ -13,6 +13,8 @@ bnk - embedded within packages stored inside of the dat/dXX packages, contains w
 wem - wwise audio files (the header looks like WAV, but these aren't WAV files!)
 mid - MIDI files (used for the piano in "The Painter". Only 4 exist and they're stored in QZIP containers.)
 bk2 - Bink 2 Video files (some are encrypted and can't be ripped yet)
+swf - Primarily used for UI elements
+gfx - Related to SWF, also primarily used for UI elements
 ```
 
 ### Extensionless formats with file signatures
